@@ -1,0 +1,413 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --primary-clr: rgb(60, 4, 60);
+    --secondary-clr: white;
+    --general-font: 'Allerta Stencil';
+}
+
+.main-container {
+    max-width: 1200px;
+    margin: 40px auto;
+}
+
+.grid-con {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+}
+
+.fp {
+    background-color: var(--primary-clr);
+    color: white;
+    border-radius: 50%;
+    text-align: center;
+    width: fit-content;
+    padding: 10px;
+    font-family: 'Skranji';
+}
+
+.sub-title {
+    font-family: 'Allerta Stencil';
+    font-size: 9px;
+    color: var(--primary-clr);
+    font-weight: 500;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.info {
+    font-family: var(--general-font);
+    color: var(--primary-clr);
+}
+
+.info p {
+    font-size: 11px;
+    margin-bottom: 10px;
+}
+
+.info h3 {
+    margin-bottom: 30px;
+    font-size: 30px;
+}
+
+.li {
+    border-radius: 15px;
+}
+
+.hr-con {
+    font-family: 'Allerta Stencil';
+    margin-top: 20px;
+    margin-bottom: 20px;
+    font-size: 10px;
+    display: flex;
+    justify-content: space-between;
+    width: 300px;
+}
+
+span {
+    font-family: 'Skranji';
+    color: rgb(106, 101, 101);
+}
+
+.hr-con hr {
+    border: none;
+    height: 20px;
+    width: 1.5px;
+    background: rgb(106, 101, 101);
+}
+
+.tp {
+    display: flex;
+    justify-content: space-between;
+}
+
+.tp div {
+    margin: 0 15px;
+    position: relative;
+    left: 20px;
+}
+
+.right-bd {
+    background: rgb(255, 255, 255);
+    height: 615px;
+    text-align: left;
+    padding: 30px 30px;
+    box-shadow: -5px 0 3px rgb(218, 214, 214);
+    border: solid 1px white;
+    border-radius: 5px;
+}
+
+.right-info {
+    width: 80%;
+    margin: 0 auto;
+}
+
+.pay {
+    background-color: rgb(36, 2, 36);
+    color: white;
+    text-align: center;
+    padding: 5px 30px;
+    font-size: 25px;
+    font-family: var(--general-font);
+    margin-bottom: 20px;
+}
+
+.right-sub {
+    display: flex;
+    justify-content: center;
+}
+
+.right-sub p {
+    margin-left: 10px;
+    margin-right: 10px;
+    position: relative;
+    bottom: 5px;
+    font-family: 'Skranji';
+    font-weight: lighter;
+    font-size: 9px;
+    color: rgb(106, 101, 101);
+    opacity: 40%;
+}
+
+.right-sub hr {
+    border: none;
+    width: 10em;
+    height: 1px;
+    background-color: rgb(106, 101, 101);
+}
+
+.first div {
+    font-family: 'Allerta Stencil';
+    color: rgb(111, 110, 110);
+    font-size: 13px;
+    margin-bottom: 5px;
+}
+
+.input,
+.card {
+    width: 100%;
+    height: 30px;
+}
+
+.sec {
+    margin-top: 30px;
+}
+
+.sec div {
+    font-family: 'Allerta Stencil';
+    font-size: 13px;
+    color: rgb(111, 110, 110);
+    margin-bottom: 5px;
+}
+
+.sub-right-grid {
+    display: grid;
+    grid-template-areas: "dg dg" "txt cvc";
+}
+
+.digit {
+    width: 100%;
+    height: 30px;
+    grid-area: dg;
+    padding-left: 10px;
+}
+
+.month {
+    grid-area: txt;
+    height: 30px;
+    color: gray;
+}
+
+.cvc {
+    grid-area: cvc;
+    height: 30px;
+    padding-left: 10px;
+}
+
+.third {
+    margin-top: 30px;
+}
+
+.third div {
+    font-family: 'Allerta Stencil';
+    font-size: 13px;
+    color: rgb(111, 110, 110);
+    margin-bottom: 5px;
+}
+
+select {
+    width: 100%;
+    border: none;
+    height: 30px;
+    padding-left: 10px;
+}
+
+.fbr {
+    border: solid 2px rgb(174, 170, 170);
+    border-radius: 5px
+}
+
+.fdiv {
+    font-family: 'Allerta Stencil';
+    font-size: 13px;
+    color: rgb(111, 110, 110);
+    margin-top: 30px;
+    margin-bottom: 5px;
+}
+
+.fourth-ip {
+    width: 100%;
+    border: none;
+    border-top: groove 1px rgb(111, 110, 110);
+    height: 30px;
+    padding-left: 12px;
+}
+
+.btn {
+    margin-top: 30px;
+    width: 100%;
+    height: 30px;
+    background-color: rgb(36, 2, 36);
+    border: none;
+    font-family: var(--general-font);
+    font-size: 15px;
+    color: gray;
+    transition: transform .2s linear;
+}
+
+.btn:hover {
+    transform: scaleX(1.05);
+}
+
+.logo {
+    position: relative;
+    width: 100%;
+}
+
+.logosub {
+    position: absolute;
+    top: 6px;
+    left: 300px;
+}
+
+.fab,
+.far {
+    font-size: 20px;
+}
+
+.fa-cc-visa {
+    background: var(--primary-clr);
+    color: white;
+}
+
+.fa-cc-mastercard {
+    background: linear-gradient(90deg, darkred, goldenrod);
+    color: var(--primary-clr);
+}
+
+.fa-cc-discover {
+    background: rgb(31, 31, 228);
+    color: white;
+}
+
+.fa-cc-amex {
+    background: linear-gradient(90deg, darkred, goldenrod);
+    color: white;
+}
+
+.logs {
+    position: relative;
+}
+
+.logz {
+    position: absolute;
+    left: 377px;
+    bottom: .1em;
+}
+
+.arr {
+    position: relative;
+    top: 10px;
+    left: 50px;
+}
+
+.fa-arrow-left {
+    color: var(--primary-clr);
+    position: absolute;
+}
+
+@media screen and (max-width: 800px) {
+    .arr {
+        position: relative;
+        top: 650px;
+        left: 15px;
+        font-size: 12px;
+    }
+    .main-container {
+        width: 85%;
+    }
+    .grid-con {
+        display: flex;
+        flex-direction: column-reverse;
+    }
+    .left-grid {
+        margin-top: 20px;
+    }
+    .right-bd {
+        background: rgb(255, 255, 255);
+        height: 615px;
+        text-align: left;
+        padding: 30px 30px;
+        box-shadow: 3px 3px 3px rgb(218, 214, 214);
+        border: solid 1px white;
+        width: 100%;
+    }
+    .right-info {
+        width: 100%;
+        margin: 0 auto;
+    }
+    .right-sub p {
+        font-size: 8px;
+    }
+    .right-sub hr {
+        border: none;
+        height: 1px;
+        background-color: rgb(106, 101, 101);
+    }
+    .left-img {
+        margin: 5px;
+    }
+    .li {
+        width: 100%;
+        height: 200px;
+    }
+    .hr-con {
+        width: 100%;
+    }
+    .tp {
+        margin-right: 10px;
+    }
+    .first div,
+    .sec div,
+    .third div,
+    .fourth div {
+        font-size: 11px;
+    }
+    .card,
+    .fourth-ip,
+    select {
+        font-size: 10px;
+    }
+}
+
+@media screen and (min-width:800px) {
+    .main-container {
+        padding: 0 1em;
+    }
+}
+
+@media screen and (max-width: 405px) {
+    .arr {
+        position: relative;
+        top: 650px;
+        left: 5px;
+        font-size: 11px;
+    }
+    .logosub {
+        position: absolute;
+        top: .9em;
+        left: 16em;
+        display: flex;
+    }
+    .fab,
+    .far {
+        font-size: 12px;
+    }
+    .logz {
+        position: absolute;
+        left: 17.6em;
+        bottom: .1em;
+    }
+}
+
+@media screen and (max-width: 360px) {
+    .logosub {
+        display: none;
+    }
+    .logz {
+        display: none;
+    }
+}
+
+@media screen and (min-width:500px) and (max-width:580px) {
+    .logosub {
+        display: none;
+    }
+    .logz {
+        display: none;
+    }
+}
